@@ -42,7 +42,7 @@
            <td>{{pr.productCode |lowercase | ConvertToSpaces:'-'}}</td>
            <td>{{pr.releaseDate}}</td>
            <td>{{pr.price | currency:'USD':'symbol':'1.1-2'}}</td>
-           <td>{{pr.starRating}}</td>
+           <td><app-star-component [rating]='pr.starRating'></app-star-component></td>
          </tr>
        </tbody>
      </table>
